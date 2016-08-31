@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>examples</title>
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react.js"></script -->
+    <!-- script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script -->
+    <script src="https://fb.me/react-15.2.1.js"></script>
+    <script src="https://fb.me/react-dom-15.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script src="./material-ui.js"></script>
+
+    <script type="text/babel">
+        import React from 'react';
+        import FlatButton from 'material-ui/lib/flat-button';
+
+        const FlatButtonExampleSimple = () => (
+          <div>
+            <FlatButton label="Default" />
+            <FlatButton label="Primary" primary={true} />
+            <FlatButton label="Secondary" secondary={true} />
+            <FlatButton label="Disabled" disabled={true} />
+          </div>
+        );
+
+        ReactDOM.render(
+          <FlatButtonExampleSimple />,
+          document.getElementById('content')
+        );
+    </script>
+</body>
+</html>
